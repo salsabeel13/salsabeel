@@ -1,0 +1,970 @@
+/* Global Styles */
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(13, 110, 253, 0.25) !important;
+}
+
+/* Button Styles */
+.btn-outline-success {
+  --bs-btn-color: #212529;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #343a40;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #0d3165;
+  --bs-btn-border-color: #000000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #212529;
+}
+/* navbar margin */
+
+.container-fluid {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* Carousel image */
+.carousel-inner img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+/* Caption for Desktop */
+.carousel-caption {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
+  padding-bottom: 240px;
+  text-align: center;
+  z-index: 10;
+  color: #003366; 
+}
+
+.carousel-caption h5 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.carousel-caption p {
+  font-size: 29px;
+  margin-bottom: 60px;
+}
+
+.carousel-caption .btn {
+  font-size: 22px;
+  padding: 12px 24px;
+}
+
+/* Caption for Mobile */
+.carousel-caption-mobile {
+  position: absolute;
+  top: 20%; 
+  left: 0;
+  right: 0;
+  padding: 0 20px; 
+  text-align: center;
+  color: #003366; 
+  z-index: 2; 
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.carousel-caption-mobile h5 {
+  font-size: 35px; 
+  font-weight: bold;
+}
+
+.carousel-caption-mobile p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-caption-mobile .btn {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+/* Animation for fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Position arrows below caption and above indicators */
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: unset;
+    bottom: 15%;
+    width: 40px; 
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Adjust positioning of the arrows */
+  .carousel-control-prev {
+    left: 20%; 
+  }
+
+  .carousel-control-next {
+    right: 20%; 
+  }
+
+  /* Styling the arrow icons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 18px; 
+    height: 18px; 
+    background-size: 100%; 
+  }
+}
+
+/* Add space below the carousel */
+.carousel {
+  margin-bottom: 80px; 
+}
+
+/* Image Box Styles */
+.image-box-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 65px; /* Increased margin for more space between content and screen edges */
+}
+
+.image-box {
+  width: 20%; 
+  text-align: center;
+  animation: fadeInLeft 2s ease-in-out forwards;
+  margin: 5px; 
+}
+
+.image-box img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  max-height: 200px; 
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.image-box-content:hover button {
+  opacity: 1;
+}
+
+.image-box:hover {
+  transform: scale(1.09);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-box button:hover {
+  background-color: #000;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-box-content {
+  padding: 20px;
+}
+
+.image-box button {
+  opacity: 0;
+  background-color: #022243;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 24px; /* Same padding for buttons */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .image-box-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px; /* Increased margin for more space on mobile */
+  }
+
+  .image-box {
+    width: 75%; 
+    margin: 10px 0; 
+  }
+}
+
+.image-box-container {
+  margin-bottom: 60px; 
+}
+
+
+/* Dropdown Styles */
+.dropdown-item {
+  color: #0d6efd;
+}
+/* Resetting some basic styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Styling the banner5 container */
+.banner5 {
+  display: flex;
+  background-color: #001f3d; 
+  color: white;
+  padding: 60px 20px 80px; /* Increased bottom padding */
+  margin-bottom: 100px; /* Increased bottom margin for more space between the banner and the next element */
+  align-items: center; 
+  justify-content: space-between;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Box shadow for the banner */
+}
+
+/* Styling the text section inside the banner5 */
+.banner5 .text-part {
+  flex: 1; 
+  padding: 20px;
+  padding-right: 40px; 
+}
+
+/* Styling the title inside the banner5 */
+.banner5 .text-part h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Styling the paragraph inside the banner5 */
+.banner5 .text-part p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Styling the image section inside the banner5 */
+.banner5 .image-part {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-end; 
+  padding-right: 40px;
+  animation: slideInRight 1s ease-out; /* Animation for the image */
+}
+
+/* Styling the image inside the banner5 */
+.banner5 .image-part img {
+  width: 60%; 
+  height: auto;
+  object-fit: cover;
+}
+
+/* Styling the button inside the banner5 */
+.banner5 .btn {
+  padding: 10px 20px;
+  background-color: white; /* White color for the button */
+  color: #001f3d; /* Dark text color for contrast */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scaling */
+}
+
+/* Button hover effect inside the banner5 */
+.banner5 .btn:hover {
+  background-color: #66b3ff; /* Light blue background on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Animation for the image to slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive styling for mobile devices inside the banner5 */
+@media (max-width: 768px) {
+  .banner5 {
+    flex-direction: column; /* Stack text and image vertically */
+    padding: 20px;
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .banner5 .text-part {
+    padding: 40px 20px; /* Increase padding from left and right */
+    text-align: center;
+    padding-bottom: 40px; /* Add more space below the text */
+  }
+
+  .banner5 .text-part h1 {
+    font-size: 28px; /* Adjust title font size */
+  }
+
+  .banner5 .text-part p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  .banner5 .btn {
+    font-size: 16px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+
+  .banner5 .image-part {
+    justify-content: center; /* Center the image on mobile */
+    margin-top: 20px; /* Add space between text and image */
+    padding-right: 20px; /* Increase padding from the right */
+    padding-left: 20px; /* Add padding to the left */
+  }
+
+  .banner5 .image-part img {
+    width: 80%; /* Further reduce the image size for mobile */
+    max-width: 250px; /* Ensure the image is not too large */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Image Section Styles */
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px; 
+    margin-bottom: 50px;
+
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  margin: 0 15px; /* Increased space between containers */
+  border: 4px solid #003366;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 26, 51, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay-title {
+  color: white;
+  font-size: 28px; /* Slightly reduced font size */
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.image-container:hover .overlay-title {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .image-section {
+    flex-direction: column;
+    padding: 30px; /* Reduced padding for mobile */
+  }
+
+  .image-container {
+    margin: 25px 25px; 
+  }
+
+  .overlay-title {
+    font-size: 22px; 
+  }
+}
+
+/* Main container to hold all flip boxes side by side */
+.flip-box-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px; 
+  margin-bottom: 50px;
+}
+
+/* Flip box container with perspective effect */
+.flip-box {
+  width: 150px;
+  height: 150px;
+  perspective: 300px;
+}
+
+/* Inner box for the flip effect */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Rotate box on hover */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces of the flip box */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* Style for the front face */
+.flip-box-front {
+  background-color: #0e0552;
+}
+
+.flip-box-front:after {
+  content: "";
+  width: 20px;
+  height: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  position: absolute;
+  background-color: #ff0000;
+  display: block;
+}
+
+.flip-box-front:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #ff0000;
+  display: block;
+}
+
+/* Style for the back face */
+.flip-box-back {
+  background-color: #0b99bc;
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+/* Add an underline effect for the text on the back */
+.flip-box-back::before {
+  content: "";
+  position: absolute;
+  top: 90%; 
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 1s ease-in; 
+  transform: translateX(-50%);
+}
+
+/* Animate the underline on hover */
+.flip-box:hover .flip-box-back::before {
+  width: 80%;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .flip-box-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .flip-box {
+    width: 180px; 
+    height: 180px; 
+    margin: 10px 0; 
+  }
+
+  .flip-box-front, .flip-box-back {
+    font-size: 18px; 
+  }
+}
+
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #a8cbef;
+  color: rgb(20, 8, 75);
+  padding: 20px 0;
+  position: relative; 
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 30px; 
+}
+
+.footer-left, .footer-middle, .footer-right {
+  flex: 2;
+  padding: 20px;
+  text-align: left; 
+}
+
+/* Center-align the heading within the footer */
+.footer h2 {
+  text-align: left; /* Align header to the left on desktop */
+  margin-bottom: 10px;
+}
+
+.footer-middle h2 {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+  color: rgb(7, 7, 86);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+  color: #99ccff;
+}
+
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0; 
+  background-color: #b9d2eb; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Ensure footer background covers the entire height without overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  /* Container adjustments */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px; /* Increased space between footer content and copyright */
+  }
+
+  /* Center-align footer content */
+  .footer-left, .footer-middle, .footer-right {
+    flex: none;
+    width: 100%;
+    padding: 20px; /* Increased padding inside sections */
+    text-align: center;
+  }
+
+  /* Center-align headings */
+  .footer h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px; /* Increased space below the heading */
+  }
+
+  /* Align middle section heading */
+  .footer-middle h2 {
+    text-align: center;
+    margin-bottom: 15px; /* Increased space below the heading in the middle section */
+  }
+
+  /* List item spacing */
+  .footer-middle ul li {
+    margin-bottom: 10px; /* Increased space between list items */
+  }
+
+  /* Copyright section styling */
+  .footer-bottom {
+    padding: 20px 0; /* Increased padding at top and bottom */
+    text-align: center;
+    background-color: #b9d2eb;
+    margin-top: 30px; /* Increased space above the copyright section */
+    width: 100%;
+    position: relative;
+  }
+
+  /* Ensure no additional footer background appears after copyright */
+  .footer {
+    padding: 0; /* Removed padding around the footer */
+    margin: 0; /* Removed extra margin */
+  }
+}
+
+/* Desktop styling adjustments (min-width: 769px) */
+@media (min-width: 769px) {
+  .footer-middle {
+    flex: 1.5; /* Decrease space occupied by the middle section */
+    padding-right: 10px; /* Reduced padding to bring middle and right sections closer */
+  }
+
+  .footer-right {
+    flex: 1; /* Decrease space occupied by the right section */
+    padding-left: 10px; /* Reduced padding to bring middle and right sections closer */
+  }
+}
+
+/* Stretch footer to fill viewport height on mobile */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+
+
+
+
+/* About us page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #003366;
+  color: white;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 80%;
+  border-radius: 10px;
+}
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    padding-right: 5px; 
+    margin-bottom: 20px; 
+  }
+
+  .about-image img {
+    width: 100%; 
+  }
+}
+
+
+/* Mission Section Styles */
+.mission-section {
+  padding: 50px;
+  background-color: #e6f7ff;
+  color: #003366;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Contact page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Hero Image styling */
+.hero-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Main container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact Form Title styling */
+.contact-title {
+  color: #003366;
+  font-size: 30px; 
+  font-weight: bold;
+  text-align: left; 
+}
+
+/* Contact Information Title styling */
+.contact-info-title {
+  color: #003366;
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+/* Contact Information Section styling */
+.info {
+  padding-left: 40px;
+  max-width: 450px; 
+}
+
+/* Contact Information List styling */
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info li {
+  display: flex;
+  align-items: center;
+  font-size: 18px; 
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.info i {
+  font-size: 20px;
+  color: #003366;
+  margin-right: 10px;
+}
+
+/* Contact Form Styling */
+.form {
+  background-color: #e9f0f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 12px; 
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  background-color: #003366;
+  color: white;
+  padding: 12px 24px; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+/* Map styling */
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Responsive styling */
+@media (max-width: 767px) {
+  .info {
+    padding-top: 40px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+
+/* Service page Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Main services section */
+.services-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+   
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service-card h2 {
+  color: #003366; 
+}
+
+.service-card p {
+  color: #555; 
+}
+
+.service-card:hover {
+  transform: scale(1.05); 
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .services-section {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .service-card {
+    width: 80%; 
+    margin-bottom: 20px; 
+  }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Our Serves
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="s.html">Serves1</a></li>
+                      <li><a class="dropdown-item" href="s.html">Serves2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="s.html">Serves3</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+  </div>
+</nav>
+<!-- Carousel Section -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?t=st=1730642024~exp=1730645624~hmac=491352fa58117a822a2c4dbf4da56919187434027ae90d300e469b3135503664&w=1380" class="d-block w-100" alt="...">
+
+      <!-- Caption for Desktop -->
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Welcome to Our Website</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+        <button type="button" class="btn btn-primary">Call to action</button>
+      </div>
+
+      <!-- Caption for Mobile -->
+      <div class="carousel-caption-mobile d-block d-md-none">
+        <h5>Welcome to Our Website on mobile 1</h5>
+        <p>Quick summary of the content here.</p>
+        <button type="button" class="btn btn-primary">Call to action</button>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?t=st=1730642024~exp=1730645624~hmac=491352fa58117a822a2c4dbf4da56919187434027ae90d300e469b3135503664&w=1380" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second Slide Label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+        <button type="button" class="btn btn-primary">Call to action</button>
+      </div>
+
+      <div class="carousel-caption-mobile d-block d-md-none">
+        <h5>Second Slide on mobile2</h5>
+        <p>Quick summary of the second slide content.</p>
+        <button type="button" class="btn btn-primary">Call to action</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?t=st=1730642024~exp=1730645624~hmac=491352fa58117a822a2c4dbf4da56919187434027ae90d300e469b3135503664&w=1380" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third Slide Label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+        <button type="button" class="btn btn-primary">Call to action</button>
+      </div>
+      <div class="carousel-caption-mobile d-block d-md-none">
+        <h5>Third Slide on mobile</h5>
+        <p>Quick summary of the third slide content.</p>
+        <button type="button" class="btn btn-primary">Call to action</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      <!-- Image Box Section -->
+
+      <div class="image-box-container">
+        <div class="image-box">
+          <img src="OQCI430.jpg.jpg" alt="Image 1">
+          <div class="image-box-content">
+            <h4>Image 1 Title</h4>
+            <p>Image 1 Description</p>
+            <button>Button 1</button>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src="OQCI430.jpg.jpg" alt="Image 2">
+          <div class="image-box-content">
+            <h4>Image 2 Title</h4>
+            <p>Image 2 Description</p>
+            <button>Button 2</button>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src="OQCI430.jpg.jpg" alt="Image 3">
+          <div class="image-box-content">
+            <h4>Image 3 Title</h4>
+            <p>Image 3 Description</p>
+            <button>Button 3</button>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src="OQCI430.jpg.jpg" alt="Image 4">
+          <div class="image-box-content">
+            <h4>Image 4 Title</h4>
+            <p>Image 4 Description</p>
+            <button>Button 4</button>
+          </div>
+        </div>
+      </div>
+  <!-- banner Section -->
+
+      <div class="banner5">
+        <!-- Left side: Text part -->
+        <div class="text-part">
+            <h1>Banner Title</h1>
+            <p>This is a description of the banner. It can be short or long depending on your needs.</p>
+            <button class="btn">Click Here</button>
+        </div>
+        
+        <!-- Right side: Image part -->
+        <div class="image-part">
+            <img src="Fashion-5.png" alt="Banner Image">
+        </div>
+    </div>
+    
+  <!-- Image Section -->
+  <div class="image-section">
+      <div class="image-container">
+          <img src="carosal.jpg" alt="Image 1" class="image">
+          <div class="overlay">
+              <h2 class="overlay-title">Title 1</h2>
+          </div>
+      </div>
+      <div class="image-container">
+          <img src="carosal.jpg" alt="Image 2" class="image">
+          <div class="overlay">
+              <h2 class="overlay-title">Title 2</h2>
+          </div>
+      </div>
+      <div class="image-container">
+          <img src="carosal.jpg" alt="Image 3" class="image">
+          <div class="overlay">
+              <h2 class="overlay-title">Title 3</h2>
+          </div>
+      </div>
+      <div class="image-container">
+          <img src="carosal.jpg" alt="Image 4" class="image">
+          <div class="overlay">
+              <h2 class="overlay-title">Title 4</h2>
+          </div>
+      </div>
+  </div>
+  <div class="flip-box-container">
+    <!-- Flip Box 1 -->
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                Front 1
+            </div>
+            <div class="flip-box-back">
+                Back 1
+            </div>
+        </div>
+    </div>
+
+    <!-- Flip Box 2 -->
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                Front 2
+            </div>
+            <div class="flip-box-back">
+                Back 2
+            </div>
+        </div>
+    </div>
+
+    <!-- Flip Box 3 -->
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                Front 3
+            </div>
+            <div class="flip-box-back">
+                Back 3
+            </div>
+        </div>
+    </div>
+
+    <!-- Flip Box 4 -->
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                Front 4
+            </div>
+            <div class="flip-box-back">
+                Back 4
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2>About Us</h2>
+            <p>We are committed to providing the best services to our customers. Our team is dedicated to excellence.</p>
+        </div>
+        <div class="footer-middle">
+            <h2>Quick Links:</h2> <!-- Updated title -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h2>Contact Us</h2>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Made by Salsabeel. All rights reserved.</p>
+    </div>
+</footer>  
+</body>
+</html>
